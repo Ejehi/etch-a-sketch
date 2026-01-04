@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    background-color: blueviolet;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw; 
+    padding: 20px;
+    gap: 16px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.grid-item {
+    width: 250px;
+    height: 250px;
+    background-color: mediumaquamarine;
+}
+
+.hover {
+    background-color: #eee;
+}
+
+button {
+    color: #eee;
+    font-size: large;
+    background-color: brown;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
