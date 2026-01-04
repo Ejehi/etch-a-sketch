@@ -5,13 +5,22 @@ const container = document.querySelector("#container");
 
 const btn = document.querySelector("button");
 
+
+const generateRandomRgbColor = () => {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
 const generateGrid = (grid) => {
     for (let i = 0; i < grid; i++) {
         const gridItem = document.createElement("div");
         gridItem.classList.add("grid-item");
         container.appendChild(gridItem);
 
-        gridItem.addEventListener('mouseover', () => gridItem.classList.add("hover"));
+        gridItem.addEventListener('mouseover', () => gridItem.style.backgroundColor = generateRandomRgbColor());
     }
 }
 

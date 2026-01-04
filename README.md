@@ -8,4 +8,4 @@ A browser version of an Etch-A-Sketch
 
 - Hover over the each box for a cool effect.
 
-- You can customize this grid by clicking the button at the top of the page.
+- You can customize the grid layout by clicking the button at the top of the page.
